@@ -4,11 +4,11 @@ on:
     branches:
       - develop
 
-strategy:
-  matrix:
-    go: ['1.23.5','1.23.6']
-
 jobs:
+  strategy:
+    matrix:
+      go: ['1.23.5','1.23.6']
+
   check-application:
     runs-on: ubuntu-latest
     steps:
