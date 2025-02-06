@@ -4,10 +4,11 @@ on:
     branches:
       - develop
 
-jobs:
-  strategy:
+   strategy:
     matrix:
       go: ['1.23.5','1.23.6']
+
+jobs:
 
   check-application:
     runs-on: ubuntu-latest
